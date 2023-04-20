@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:background="@drawable/music">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canciones Con Firebase"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/txtid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Identiﬁcador"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:textColor="@color/purple_200"
+            android:textColorHint="#8C8787"
+
+            />
+
+        <Button
+            android:id="@+id/btnbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:text="Buscar"
+            android:textColor="@color/white"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#2CD3D1"
+            android:drawableLeft="@drawable/ic_bus"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre de la Cancion"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_200"
+        android:textColorHint="#8C8787"/>
+
+    <EditText
+        android:id="@+id/txtdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre del artista"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_200"
+        android:textColorHint="#8C8787"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/btnmod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#2CD3D1"
+            android:drawableLeft="@drawable/ic_edit"/>
+
+        <Button
+            android:id="@+id/btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#2CD3D1"
+            android:drawableLeft="@drawable/ic_save"/>
+
+        <Button
+            android:id="@+id/btneli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#2CD3D1"
+            android:drawableLeft="@drawable/ic_del"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Canciones guardadas"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"/>
+
+    <ListView
+        android:id="@+id/lvDatos"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/fon"
+        android:padding="50px"
+        android:textColor="#FFFFFF"
+        android:cacheColorHint="@android:color/transparent"
+        android:elevation="150dp" />
+</LinearLayout>
